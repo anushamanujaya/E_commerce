@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+*{
+   margin: 0px; 
+   padding: 0px;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@600;700&display=swap');
+
+body {
+   font-family: "lato", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-blue{
+   background: #233a95;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.headerWrapper .top-strip{
+   padding: 8px 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.headerWrapper .top-strip p{
+   color: #fff; 
+   font-size: 12px; 
+   font-weight: 700;
 }
 
-.App-link {
-  color: #61dafb;
+.headerWrapper .header{
+   width: 100%; 
+   height: auto; 
+   padding: 15px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logoWrapper img{ 
+   width: 100%;
+}
+
+.headerWrapper .part2 .countryDrop{
+   width: 170px; 
+   height: 55px; 
+   min-width: 150px; 
+   color: rgba(0,0,0,0.1) !important; 
+   border: 1px solid rgba(0,0,0,0.20) !important;
+   border-radius: 7px !important ; 
+   padding: 10px 15px !important;
+
+}
+
+.headerWrapper .part2 .countryDrop{
+   text-align: left; 
+   justify-content: flex-start !important; 
+}
+
+.headerWrapper .part2 .label{
+   font-size: 12px !important; 
+   text-transform: capitalize !important; 
+   color: rgba(0, 0, 0, 0.4) !important; 
+   line-height: 16px;
+}
+
+.headerWrapper .part2 .name{
+   font-size: 14px !important; 
+   text-transform: capitalize !important; 
+   color: #233a95; 
+   font-weight: 700; 
+   line-height: 16px;
+}
+
+.headerWrapper .part2 .countryDrop span.ml-auto svg {
+   opacity: 0.7;
+}
+
+.headerWrapper .header .headerSearch {
+   width: 60%; 
+   height: 55px; 
+   background: #f3f4f7; 
+   padding: 3px;
+   position: relative;
+   border-radius: 5px;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.headerWrapper .header .headerSearch input {
+   background: transparent !important; 
+   outline: none !important; 
+   font-size: 18px; 
+   color: rgba(0,0,0,0.7);
+   width: 100%;
+   height: 45px;
+   border: 0px !important;
+   padding: 0px 20px !important;
+}
+
+.headerWrapper .header .headerSearch input::-webkit-input-placeholder{
+   color: rgba(0,0,0,0.6);
+}
+
+.headerWrapper .header .headerSearch button {
+   position: absolute;
+   top: 8px;
+   right: 15px;
+   z-index: 100;
+   min-width: 40px !important;
+   height: 40px !important;
+   width: 40px !important;
+   border-radius: 50% !important;
+   color: black;
+}
+
+.headerWrapper .header .headerSearch button svg{
+   font-size: 25px;
+}
+
+.headerWrapper .header .circle{
+   align-items: center;
+   justify-content: center;
+   min-width: 45px !important;
+   height: 45px !important;
+   width: 45px !important;
+   border-radius: 50% !important;
+   border: 1px solid rgba(0,0,0,0.1) !important;
+   color: black;
+}
+
+.headerWrapper .header .circle svg{
+   font-size: 22px;
+}
+   
+
+.headerWrapper .header .cartTab .Price{
+   font-size: 18px;
+   color: rgba(0, 0, 0, 0.8);
+   font-weight: 700;
+}
+
+.headerWrapper .header .cartTab button{
+   background: #fff1ee !important;
+
+}
+
+.headerWrapper .header .cartTab button svg{
+   color: #ea2b0f !important;
+}
+
+.headerWrapper .header .cartTab .count{
+   position: absolute;
+   top: -6px;
+   right: -4px;
+   border-radius: 50%;
+   color: white;
+   background: #ea2b0f;
+   width: 20px;
+   height: 20px;
 }
