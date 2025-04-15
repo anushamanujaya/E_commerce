@@ -13,6 +13,12 @@ body {
    background: #233a95;
 }
 
+@media (min-width: 1300px){
+   .container, .container-lg, .container-md, .container-xl{
+      max-width: 1200px;
+   }
+}
+
 
 .headerWrapper .top-strip{
    padding: 8px 0px;
@@ -27,7 +33,7 @@ body {
 .headerWrapper .header{
    width: 100%; 
    height: auto; 
-   padding: 15px 0px;
+   padding: 25px 0px;
 }
 
 .logoWrapper img{ 
@@ -69,7 +75,7 @@ body {
    opacity: 0.7;
 }
 
-.headerWrapper .header .headerSearch {
+.headerSearch {
    width: 60%; 
    height: 55px; 
    background: #f3f4f7; 
@@ -79,7 +85,7 @@ body {
    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.headerWrapper .header .headerSearch input {
+.headerSearch input {
    background: transparent !important; 
    outline: none !important; 
    font-size: 18px; 
@@ -90,14 +96,14 @@ body {
    padding: 0px 20px !important;
 }
 
-.headerWrapper .header .headerSearch input::-webkit-input-placeholder{
+.headerSearch input::-webkit-input-placeholder{
    color: rgba(0,0,0,0.6);
 }
 
-.headerWrapper .header .headerSearch button {
+.headerSearch button {
    position: absolute;
    top: 8px;
-   right: 15px;
+   right: 10px;
    z-index: 100;
    min-width: 40px !important;
    height: 40px !important;
@@ -106,8 +112,9 @@ body {
    color: black;
 }
 
-.headerWrapper .header .headerSearch button svg{
+.headerSearch button svg{
    font-size: 25px;
+   opacity: 0.8;
 }
 
 .headerWrapper .header .circle{
@@ -151,3 +158,67 @@ body {
    width: 20px;
    height: 20px;
 }
+
+.locationModal .MuiPaper-elevation{
+   padding: 25px;
+   
+}
+
+nav .navPart1{
+   max-width: 20%; flex: 0 0 20%;
+}
+
+nav .navPart1{
+   max-width: 20%; flex: 0 0 20%;
+}
+
+
+
+nav .allCatTab{
+   background: #2bbef9;
+   padding: 10px 15px !important;
+   border-radius: 30px;
+}
+
+nav .allCatTab *{
+   color: #fff;
+}
+
+nav .allCatTab:hover{
+   background: #2bbef9;
+}
+
+nav .allCatTab .text{
+   font-weight: 600;
+}
+
+nav .allCatTab .icon1 svg{
+   font-size: 20px !important;
+
+}
+
+nav .allCatTab .icon2 svg{
+   font-size: 15px !important;
+}
+
+nav .navPart2 ul{
+   margin-bottom: 0px;
+}
+
+nav .navPart2 ul li a{
+   font-size: 15px;
+   font-weight: 600;
+   text-decoration: none;
+   color: rgba(0, 0, 0, 0.7);
+   text-transform: uppercase;
+   display: flex;
+   align-items: center;
+   padding: 8px 15px;
+   transition: all 0.2s ease-in-out;
+   border-radius: 30px;
+}
+   
+nav .navPart2 ul li a:hover{
+   background: #f0faff; color: #2bbef9;
+}
+
